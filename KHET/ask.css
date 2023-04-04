@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+background: url("images/92.jpg")no-repeat;
+background-size: 1700px;
+}
+
+img{
+    width: 210px;
+    position: relative;
+    z-index: 0;
+    bottom: 45px;
+    left: 40px;
+}
+
+.container_fluid{
+
+    width: 100%;
+    height: 100vh;
+
+}
+
+.container{
+    display: block;
+    background: white ;
+
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 15%;
+    height: 80vh;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 8px 0 20px rgba(0,0,0,0.5);
+}
+
+.logo{
+    display: flex;
+}
+
+.logo ul{
+    display: flex;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.logo li{
+    margin-left: 80px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    font-size: 15px;
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+ul li:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color:  #d4e252;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+
+
+
+ul li:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+ul li :focus{
+    color:  #d4e252;
+
+}
+
+form{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+h1{
+    font-size: 40px;
+    color: green;
+}
+.social-container{
+    margin: 20px 0px;
+}
+
+.social-container a{
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    height: 40px;
+    width: 40px;
+}
+
+
+
+span{
+    font-size: 12px;
+}
+
+button{
+    background: green;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+button:hover{
+background:  #00ff00;
+box-shadow: 2px 2px 5px black;
+}
+
+input{
+padding: 10px;
+border: 2px solid black;
+margin: 30px;
+}
